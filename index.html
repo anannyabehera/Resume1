@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anannya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: cornsilk;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(53, 38, 53);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: cornsilk;
+            margin-right: 30px;
+        }
+
+        nav ul li a:hover {
+            color: plum;
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: cornsilk;
+            height: 1.2px;
+            margin: 0px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .left img {
+            width: 5%;
+            margin: 0 40px;
+        }
+
+        .Home {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+        }
+
+        .Home>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 30px 0;
+        }
+
+        .rightSection img {
+            width: 67%;
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+            animation: hoverImage 5s infinite alternate;
+
+        }
+
+        @keyframes hoverImage {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        .rightSection img:hover {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
+
+        .purple {
+            color: rgb(104, 69, 120);
+            font-size: 3rem;
+        }
+
+        #element {
+            color: rgb(104, 69, 120);
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 150vh;
+        }
+
+        .secondSection h1 {
+            color: black;
+            font-size: 2rem;
+        }
+
+        .d {
+            background-color: #949494;
+        }
+
+        .text-purple {
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        .violet {
+            color: black;
+            font-size: 1.7rem;
+
+        }
+
+        .part1 {
+            color: black;
+            font-size: 1.4rem;
+        }
+
+        .animated-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes resetOpacity {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .part2 {
+            color: black;
+            font-size: 1.3rem;
+        }
+
+        .part3 {
+            margin-top: 3%;
+            color: black;
+            font-size: 1.4rem;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+            color: cornsilk;
+            margin-top: 3%;
+        }
+
+        .thirdSection h1 {
+            font-size: 2rem;
+        }
+
+        .c {
+            background-color: black;
+        }
+
+        .Contact {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+            color: black;
+
+        }
+
+        .Contact h1 {
+            font-size: 2rem;
+        }
+
+        .a {
+            background-color: #949494;
+        }
+
+        .b {
+            color: black;
+            font-size: 1.4rem;
+        }
+
+        .k {
+            color: cornsilk;
+            font-size: 1.4rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .left img {
+                width: 10%;
+                margin: 0 20px;
+            }
+
+            .Home {
+                flex-direction: column;
+                text-align: center;
+                margin: 40px 0;
+            }
+
+            .Home>div {
+                width: 100%;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .secondSection {
+                padding: 20px;
+            }
+
+            .Contact {
+                padding: 20px;
+            }
+
+            .leftSection .b {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+        @media (min-width: 1024px) {}
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="bg1.png.png" alt="">
+                <span class="one">Anannya's Portfolio</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Others">Others</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="Home" id="Home">
+            <div class="leftSection">
+                <div>
+                    Hi everyone, my name is <span class="purple">Anannya Behera</span>
+                </div>
+                <div>
+                    and I am a
+                </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg7_edited.jpg" alt="">
+            </div>
+        </section>
+
+        <section style="background-image: url('bg4.jpg');" class="d">
+            <section class="secondSection">
+                <section class="About" id="About">
+                    <p style="padding-top: 25px; color: black; font-size: 1.2rem;">Personal Details</p>
+                    <h1 style="padding-top: 23px;">
+                        A Quick Background
+                    </h1>
+
+                    <div class="leftSection animated-fade">
+                        <div class="violet">
+                            <span class="violet">I'm based in</span>
+                        </div>
+                        <div class="part1">
+                            Nayapalli, Bhubaneswar
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Education" id="Education">
+                    <h1>Educational Details</h1>
+
+                    <div class="leftSection">
+                        <div class="jungkook animated-fade">
+                            <span class="violet">1. DAV Public School, Unit-VIII | Bhubaneswar, Odisha</span>
+                        </div>
+                        <div class="jungkook animated-fade">
+                            <h3 class="part3">
+                                Matriculation(Secondary School Examination)
+                            </h3>
+                        </div>
+                        <div class>
+                            <div class="part2 animated-fade">
+                                <div>
+                                    Affiliated to CBSE
+                                </div>
+                                <div>
+                                    Year:2019
+                                </div>
+                                <div>
+                                    Percentage:98%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jungkook animated-fade">
+                            <h3 class="part3">
+                                Higher Secondary
+                            </h3>
+                        </div>
+                        <div class>
+                            <div class="part2 animated-fade">
+                                <div>Affiliated to CBSE</div>
+                                <div>Year:2021</div>
+                                <div>Percentage:95%</div>
+                            </div>
+                        </div>
+                        <div class="jungkook animated-fade">
+                            <span class="violet" style="margin-top: 2%;">2. Odisha University of Technology and Research
+                                | Ghatikia, Bhubaneswar</span>
+                        </div>
+                        <div class="jungkook animated-fade">
+                            <h3 class="part3">
+                                Bachelor of Technology(B Tech) | 2026
+                            </h3>
+                        </div>
+                        <div class>
+                            <div class="part2 animated-fade">
+                                <div>
+                                    Branch: Electronics and Instrumentation
+                                </div>
+                                <div>
+                                    Semester: Third
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section class="c">
+            <section class="thirdSection">
+                <div class="column-container">
+                    <section class="Skills" id="Skills">
+                        <h1 style="margin-top: 3%;" class="fade-in">Skills</h1>
+                        <div class="leftSection animated-fade">
+                            <div class="k">
+                                <div>~ Basic C programming language</div>
+                                <div>~ Java programming language</div>
+                                <div>~ Web Developer</div>
+                                <div>~ Web Designing</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column-container">
+                    <section class="Others" id="Others">
+                        <h1 class="fade-in">Interests</h1>
+                        <div class="leftSection animated-fade">
+                            <div class="k">
+                                <div>~ Dance</div>
+                                <div>~ Music</div>
+                                <div>~ Reading</div>
+                                <div>~ Travelling</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column-container">
+                    <section class="Achievements" id="Achievements">
+                        <h1 class="fade-in">Achievements</h1>
+                        <div class="leftSection animated-fade">
+                            <div class="k">
+                                <div>~ Junior National Scholarship for Odissi Dance by CCRT</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </section>
+
+        <section style="background-image: url('footer-background-011.jpg');" class="a">
+            <section class="Contact" id="Contact">
+                <h1 style="padding-top: 35px;">Contact Details</h1>
+                <div class="leftSection animated-fade">
+                    <div class="b">
+                        <div>Phone number: 7008793314</div>
+                        <div>
+                            Email id: anannya2603@gmail.com
+                        </div>
+                        <div>
+                            Instagram: _._any_._
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 80,
+
+        });
+    </script>
+
+    <script>
+        // Function to check if an element is in the viewport
+        function isElementInViewport(leftSection) {
+            var rect = leftSection.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentLeftSection.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentLeftSection.clientWidth)
+            );
+        }
+
+        // Function to add the "animate" class when an element is in the viewport
+        function animateOnScroll() {
+            var elements = document.querySelectorAll('.animated-fade');
+            elements.forEach(function (leftSection) {
+                if (isElementInViewport(leftSection)) {
+                    leftSection.classList.add('animate');
+                }
+            });
+        }
+
+        // Add an event listener for the scroll event
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Trigger animations when the page loads
+        animateOnScroll();
+
+    </script>
+
+    <script>
+        // Function to check if an element is in the viewport
+        function isElementInViewport(jungkook) {
+            var rect = jungkook.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentJungkook.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentJungkook.clientWidth)
+            );
+        }
+
+        // Function to add the "animate" class when an element is in the viewport
+        function animateOnScroll() {
+            var elements = document.querySelectorAll('.animated-fade');
+            elements.forEach(function (jungkook) {
+                if (isElementInViewport(jungkook)) {
+                    jungkook.classList.add('animate');
+                } else {
+                    jungkook.classList.remove('animate'); // Remove the class if element is out of the viewport
+                }
+            });
+        }
+
+        // Add an event listener for the scroll event
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Trigger animations when the page loads
+        animateOnScroll();
+
+    </script>
+
+<script>
+    // Function to check if an element is in the viewport
+    function isElementInViewport(part2) {
+        var rect = part2.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentPart2.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentPart2.clientWidth)
+        );
+    }
+
+    // Function to add the "animate" class when an element is in the viewport
+    function animateOnScroll() {
+        var elements = document.querySelectorAll('.animated-fade');
+        elements.forEach(function (part2) {
+            if (isElementInViewport(part2)) {
+                part2.classList.add('animate');
+            }
+        });
+    }
+
+    // Add an event listener for the scroll event
+    window.addEventListener('scroll', animateOnScroll);
+
+    // Trigger animations when the page loads
+    animateOnScroll();
+
+</script>
+
+</body>
+
+</html>
